@@ -1,0 +1,43 @@
+.table-detail {
+  margin: 120px 10px 0 10px;
+  border: 1px solid black;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.poster-detail {
+  width: 250px;
+  height: 400px;
+}
+
+.judul-utama {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.table-detail .row {
+  border-bottom: 1px solid black;
+  margin-left: 0.01px;
+}
+
+.col-md-4 {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.col-md-2,
+.col-md-1 {
+  padding: 20px 0 0 0;
+}
+
+.col-md-1 {
+  width: 20px;
+}
+
+.col-md-2 {
+  width: 600px;
+}
+
+.nama-kolom {
+  width: 100px;
+}

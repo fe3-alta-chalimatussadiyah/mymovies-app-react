@@ -1,0 +1,30 @@
+.card {
+  margin: 120px 10px 10px 10px;
+  width: 300px;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 450px;
+}
+
+.detail,
+.favorite {
+  display: inline-block;
+  font-weight: 400;
+  height: 50px;
+  line-height: normal;
+  font-size: 15px;
+  color: #FFFFFF;
+  -webkit-user-select: none;
+  user-select: none;
+  border-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.detail:hover,
+.favorite:hover {
+  border-color: rgba(255, 0, 0, 0.7);
+  background-color: transparent;
+  color: rgba(255, 0, 0, 0.7);
+}

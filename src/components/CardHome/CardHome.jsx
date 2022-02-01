@@ -8,14 +8,21 @@ class CardHome extends Component {
   state = {
     poster: foto,
     title: "judul",
+  };
+
+  componentDidMount() {
+      this.setState({
+        title: this.props.title,
+        poster: this.props.poster,
+      });
   }
 
   render() {
     return (
         <Card>
-          <Card.Img variant="top" src={this.props.poster} />
+          <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500' + this.state.poster} />
           <Card.Body>
-            <Card.Title>{this.props.title}</Card.Title>
+            <Card.Title>{this.state.title}</Card.Title>
           </Card.Body>
           <Card.Body className="d-flex justify-content-between">
           <Button className="detail" variant="primary">Show Detail</Button>

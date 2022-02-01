@@ -5,8 +5,8 @@ import Home from "./views/Home/Home";
 function App() {
   return (
     <>
-    <Home />
-    {/* <Detail /> */}
+    {/* <Home /> */}
+    <Detail />
     {/* <Favorite /> */}
     </>
   );

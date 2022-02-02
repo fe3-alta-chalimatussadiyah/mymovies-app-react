@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Viga&display=swap');
 .card {
   margin: 120px 10px 10px 10px;
   width: 300px;
+  font-family: Source Sans Pro;
 }
 
 .card-img-top {
@@ -12,9 +14,9 @@
 .favorite {
   display: inline-block;
   font-weight: 400;
-  height: 50px;
+  height: 40px;
   line-height: normal;
-  font-size: 15px;
+  font-size: 14px;
   color: #FFFFFF;
   -webkit-user-select: none;
   user-select: none;

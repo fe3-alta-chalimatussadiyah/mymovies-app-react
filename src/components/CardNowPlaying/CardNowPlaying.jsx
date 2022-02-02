@@ -1,10 +1,10 @@
 import { Card, Button } from 'react-bootstrap';
-import "../../styles/CardHome/CardHome.css";
+import "../../styles/CardNowPlaying/CardNowPlaying.css";
 import foto from "../../assets/atlantis.jpg";
 
 import React, { Component } from 'react';
 
-class CardHome extends Component {
+class CardNowPlaying extends Component {
   state = {
     poster: foto,
     title: "judul",
@@ -33,4 +33,4 @@ class CardHome extends Component {
   }
 }
 
-export default CardHome;
+export default CardNowPlaying;

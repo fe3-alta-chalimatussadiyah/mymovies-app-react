@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavbarComponent from '../../components/NavbarComponent/NavbarComponent';
-import TableDetail from '../../components/TableDetail/TableDetail';
+import TableDetail from '../../components/CardDetail/CardDetail';
 
 import foto from "../../assets/aladdin.jpg";
 import foto1 from "../../assets/aladdin.jpg";

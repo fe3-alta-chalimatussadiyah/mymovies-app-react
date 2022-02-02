@@ -2,7 +2,7 @@
   margin: 120px 10px 0 10px;
   border: 1px solid black;
   align-items: flex-start;
-  width: 70%;
+  width: 80%;
 }
 
 .poster-detail {
@@ -39,5 +39,5 @@
 }
 
 .nama-kolom {
-  width: 100px;
+  width: 200px;
 }

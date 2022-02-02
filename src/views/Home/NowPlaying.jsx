@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import CardHome from '../../components/CardHome/CardHome';
+import CardNowPlaying from '../../components/CardNowPlaying/CardNowPlaying';
 import NavbarComponent from '../../components/NavbarComponent/NavbarComponent';
 import axios from "axios";
 
-class Home extends Component {
+class NowPlaying extends Component {
     state = {
       movies: [],
     };
@@ -32,7 +32,7 @@ class Home extends Component {
         <div className="d-flex justify-content-evenly flex-wrap">
         {
           this.state.movies.map((el, i) => (
-            <CardHome title={el.original_title} poster={el.backdrop_path} key={i} />
+            <CardNowPlaying title={el.original_title} poster={el.backdrop_path} key={i} id={el.id} />
           ))
         }
         </div>
@@ -41,4 +41,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default NowPlaying;

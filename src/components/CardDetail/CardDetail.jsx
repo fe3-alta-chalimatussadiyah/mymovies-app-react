@@ -1,6 +1,5 @@
 import { Row, Col } from 'react-bootstrap';
-// import { FaRegPlayCircle, FaSearch } from "react-icons/fa";
-import "../../styles/TableDetail/TableDetail.css";
+import "../../styles/CardDetail/CardDetail.css";
 
 import foto from "../../assets/atlantis.jpg";
 

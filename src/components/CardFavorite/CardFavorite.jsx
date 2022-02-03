@@ -17,7 +17,7 @@ class CardFavorite extends Component {
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
           </Card.Body>
-          <Card.Body className="d-flex flex-wrap">
+          <Card.Body className="d-flex flex-wrap justify-content-between">
           <Button className="detail" variant="primary">Show Detail</Button>
           <Button className="favorite" variant="primary">Remove from Favorite</Button>
           </Card.Body>

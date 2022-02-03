@@ -11,10 +11,11 @@
 .detail,
 .favorite {
   display: inline-block;
-  width: 100%;
-  margin-bottom: 5px;
+  width: 125px;
+  padding: 0;
+  margin: 0;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: normal;
   color: #FFFFFF;
   -webkit-user-select: none;
   user-select: none;

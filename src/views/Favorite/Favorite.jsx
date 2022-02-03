@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CardFavorite from '../../components/CardFavorite/CardFavorite';
-import NavbarComponent from '../../components/NavbarComponent/NavbarComponent';
 
 import foto from "../../assets/atlantis.jpg";
 import foto4 from "../../assets/coco.jpg";
@@ -19,8 +18,6 @@ class Favorite extends Component {
   }
   render() {
     return (
-      <>
-       <NavbarComponent />
        <div className="d-flex justify-content-between flex-wrap">
         <CardFavorite poster={foto4} title="Coco" />
         <CardFavorite poster={foto5} title="Dumbo" />
@@ -31,7 +28,6 @@ class Favorite extends Component {
         <CardFavorite poster={foto15} title="Toy Story 4" />
         <CardFavorite poster={foto16} title="UP" />
         </div>
-      </>
     );
   }
 }

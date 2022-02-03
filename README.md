@@ -1,5 +1,5 @@
 ### `link deploy`
-deploy with vercel [deployment](https://mymovies-app-react-liard.vercel.app/).
+deploy with vercel, clik this link --> [deploy movie](https://mymovies-app-react-liard.vercel.app/).
 
 # Getting Started with Create React App
 

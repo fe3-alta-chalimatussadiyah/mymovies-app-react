@@ -38,7 +38,7 @@ function NowPlayingFunc() {
     <div className="d-flex justify-content-evenly flex-wrap">
       {returnLoading()}
       {movies.map((el, i) => (
-          <CardNowPlayingFunc title={el.original_title} poster={el.backdrop_path} key={i} id={el.id} />
+          <CardNowPlayingFunc title={el.original_title} poster={el.poster_path} key={i} id={el.id} />
         ))}
     </div>
   )

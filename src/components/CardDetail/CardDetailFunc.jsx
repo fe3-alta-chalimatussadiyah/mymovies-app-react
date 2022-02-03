@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 import "../../styles/CardDetail/CardDetail.css";
+import { useNavigate } from "react-router-dom";
 
 function CardDetailFunc(props) {
 
@@ -13,6 +14,8 @@ function CardDetailFunc(props) {
   const [budget, setBudget] = useState("");
   const [popularity, setPopularity] = useState("");
   const [overview, setOverview] = useState("");
+
+  let navigate = useNavigate();
 
   useEffect(() => {
     console.log(props)
@@ -64,6 +67,15 @@ function CardDetailFunc(props) {
         <p >{overview}</p>
       </Col>
     </Row>
+    <Button
+          className="back"
+          variant="primary"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Go Back
+        </Button>
     </div>
   );
 }

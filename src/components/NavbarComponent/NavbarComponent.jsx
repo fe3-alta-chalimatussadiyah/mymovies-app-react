@@ -3,9 +3,12 @@ import { Nav, Navbar, Container, Form, FormControl, Button} from 'react-bootstra
 import { FaRegPlayCircle, FaSearch } from "react-icons/fa";
 import '../../styles/NavbarComponent/NavbarComponent.css';
 import { Link } from "react-router-dom";
+import BootstrapSwitchButton from 'bootstrap-switch-button-react';
 
 function NavbarComponent() {
+
   return (
+
     <Navbar bg="dark" variant="dark" fixed="top">
       <Container fluid>
       <Navbar.Brand href="#home">DIY M<FaRegPlayCircle />VIE!</Navbar.Brand>
@@ -18,6 +21,7 @@ function NavbarComponent() {
         </Nav.Link>
       </Nav>
 
+      <BootstrapSwitchButton onstyle="dark" offstyle="light" checked={false} />
       <Form className="d-flex">
           <FormControl
             type="search"

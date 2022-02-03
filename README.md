@@ -1,3 +1,6 @@
+### `link deploy`
+deploy with vercel [deployment](https://mymovies-app-react-liard.vercel.app/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

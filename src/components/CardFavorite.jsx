@@ -1,6 +1,6 @@
 import { Card, Button } from 'react-bootstrap';
-import "../../styles/CardFavorite/CardFavorite.css";
-import foto from "../../assets/atlantis.jpg";
+import "../styles/CardFavorite.css";
+import foto from "../assets/atlantis.jpg";
 
 import React, { Component } from 'react';
 
@@ -13,7 +13,7 @@ class CardFavorite extends Component {
   render() {
     return (
         <Card>
-          <Card.Img variant="top" src={this.props.poster} />
+          <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500/' + this.props.poster} />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
           </Card.Body>

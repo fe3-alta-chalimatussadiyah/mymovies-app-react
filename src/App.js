@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavbarComponent from "./components/NavbarComponent/NavbarComponent";
+import NavbarComponent from "./components/NavbarComponent";
 
-// import Detail from "./views/Detail/Detail";
+// import Detail from "./views/Detail";
 import Favorite from "./views/Favorite/Favorite";
 import NowPlayingFunc from "./views/Home/NowPlayingFunc";
 import DetailFunc from "./views/Detail/DetailFunc";

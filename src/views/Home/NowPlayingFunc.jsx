@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CardNowPlayingFunc from '../../components/CardNowPlaying/CardNowPlayingFunc';
+import CardNowPlayingFunc from '../../components/CardNowPlayingFunc';
 import { Spinner } from "react-bootstrap";
 import axios from "axios";
 
@@ -35,7 +35,7 @@ function NowPlayingFunc() {
   }
 
   return (
-    <div className="d-flex justify-content-evenly flex-wrap">
+    <div className="d-flex justify-content-evenly flex-wrap" style={{marginTop: "100px"}}>
       {returnLoading()}
       {movies.map((el, i) => (
           <CardNowPlayingFunc title={el.original_title} poster={el.poster_path} key={i} id={el.id} />

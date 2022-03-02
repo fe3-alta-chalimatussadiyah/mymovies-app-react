@@ -1,22 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import {useDispatch} from 'react-redux';
+import allStore from "../store/actions";
 
 import { Card, Button } from 'react-bootstrap';
-import "../../styles/CardNowPlaying/CardNowPlaying.css";
-import foto from "../../assets/atlantis.jpg";
+import "../styles/CardNowPlaying.css";
+import foto from "../assets/atlantis.jpg";
 
-function CardNowPlayingFunc(props) {
+export default function CardNowPlayingFunc(props) {
   const [title, setTitle] = useState("judul");
   const [poster, setPoster] = useState(foto);
   const [id, setId] = useState(0);
 
   let navigate = useNavigate();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     setTitle(props.title);
     setPoster(props.poster);
     setId(props.id);
   }, [props]);
+
+  function handleAddToFavorite() {
+    dispatch(allStore.setFavorites({
+        id,
+        title,
+        poster,
+      })
+    );
+  }
 
   return (
     <Card>
@@ -30,11 +42,8 @@ function CardNowPlayingFunc(props) {
         }}>
         Show Detail
         </Button>
-      <Button className="favorite" variant="primary">Add to Favorite</Button>
+      <Button className="favorite" variant="primary" onClick={handleAddToFavorite}>Add to Favorite</Button>
       </Card.Body>
     </Card>
-);
+  );
 }
-
-
-export default CardNowPlayingFunc;

@@ -1,11 +1,11 @@
 import React from "react";
 import { Nav, Navbar, Container, Form, FormControl, Button} from 'react-bootstrap';
 import { FaRegPlayCircle, FaSearch } from "react-icons/fa";
-import '../../styles/NavbarComponent/NavbarComponent.css';
+import '../styles/NavbarComponent.css';
 import { Link } from "react-router-dom";
 import BootstrapSwitchButton from 'bootstrap-switch-button-react';
 
-function NavbarComponent() {
+export default function NavbarComponent() {
 
   return (
 
@@ -35,5 +35,3 @@ function NavbarComponent() {
         </Navbar>
   );
 }
-
-export default NavbarComponent;

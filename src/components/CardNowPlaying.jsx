@@ -1,5 +1,5 @@
 import { Card, Button } from 'react-bootstrap';
-import "../../styles/CardNowPlaying/CardNowPlaying.css";
+import "../styles/CardNowPlaying.css";
 import foto from "../../assets/atlantis.jpg";
 
 import React, { Component } from 'react';

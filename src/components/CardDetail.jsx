@@ -1,5 +1,5 @@
 import { Row, Col } from 'react-bootstrap';
-import "../../styles/CardDetail/CardDetail.css";
+import "../../styles/CardDetail.css";
 
 import foto from "../../assets/atlantis.jpg";
 

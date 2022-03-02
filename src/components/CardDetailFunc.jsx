@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Button } from 'react-bootstrap';
-import "../../styles/CardDetail/CardDetail.css";
+import "../styles/CardDetail.css"
 import { useNavigate } from "react-router-dom";
 
 function CardDetailFunc(props) {

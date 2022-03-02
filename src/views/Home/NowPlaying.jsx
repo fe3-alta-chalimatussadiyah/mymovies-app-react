@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import CardNowPlaying from '../../components/CardNowPlaying/CardNowPlaying';
-import NavbarComponent from '../../components/NavbarComponent/NavbarComponent';
+import CardNowPlaying from '../../components/CardNowPlaying';
+import NavbarComponent from '../../components/NavbarComponent';
 import axios from "axios";
 
 class NowPlaying extends Component {

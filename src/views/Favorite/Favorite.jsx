@@ -9,7 +9,7 @@ export default function Favorite() {
   useEffect(() => {}, [favorites])
 
   return (
-    <div className="d-flex justify-content-between flex-wrap">
+    <div className="d-flex justify-content-between flex-wrap" style={{marginTop: "100px"}}>
       {favorites.map((el, i) => (
         <CardFavorite poster={el.poster} title={el.title} id={el.id} />
       ))}
